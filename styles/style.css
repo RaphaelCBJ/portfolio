@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;600&display=swap');
+
+:root {
+    --primary-color: #0B2447;
+    --secondary-color: #A5D7E8;
+    --tertiary-color: #576CBC;
+    --cor-hover: #272727;
+
+    --main-font: 'Signika Negative', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {    
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.headerpage {
+    padding: 2% 0% 0% 15%;
+}
+
+.headerpage__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.headerpage__menu__link {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.introduction {
+    /* padding: 4% 24% 19.9%; */
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.introduction__content {
+    width: 50%;
+    /* height: 482px; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.introduction__content__title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    font-family: var(--main-font);
+}
+
+.featured-title {
+    color: var(--tertiary-color);
+}
+
+.introduction__content__paragraph {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--main-font);
+}
+
+.introduction__content__paragraph a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+
+.introduction__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.introduction__links__subtitle {
+        font-family: var(--main-font);
+        font-weight: 600;
+        font-size: 1.5rem;
+}
+
+.introduction__links__browsing {    
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--tertiary-color);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+}
+
+.introduction__links__browsing:hover {
+    background-color: var(--cor-hover);
+}
+
+.introduction__img {
+    width: 50%;
+}
+
+.page__footer {
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 24px 24px 24px 24px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 1500px) {
+    .headerpage {
+        padding: 10%;
+  }
+
+    .headerpage__menu {
+        justify-content: center;
+    }
+    .introduction {
+        flex-direction: column-reverse;
+        padding: 9%;
+  }
+
+    .introduction__content {
+        width: auto;
+    }
+
+}
